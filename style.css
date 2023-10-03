@@ -1,0 +1,132 @@
+.bgimg{
+    background-image: url("https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/3/1-cant-we-all-just-get-along-rock-paper-scissors-gifts-kanig-designs.jpg");
+    background-size: 100% 100%;
+}
+.main{
+    visibility: hidden;
+    width: 70%;
+    height: 800px;
+    border: solid black 1px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.9)
+}
+.choose{
+    width: 600px;
+    height: 150px;
+    border: yellow 4px solid;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.fight{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.user, .comp{
+    width: 380px;
+    height: 300px;
+    border: solid black 1px;
+    background-color: white;
+}
+.img1, .img2, .img3{
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    border-radius: 50%;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+.img1:active {background-color: aqua;
+}
+.img2:active { background-color: aqua;
+}
+.img3:active{background-color: aqua;
+
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.img12{
+    width: 370px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.img3{
+    text-align: center;
+}
+.comp{
+    background-image: url("https://www.wolfgangdigital.com/uploads/blog/Facebook-meme-waiting-computer-300x179.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.result{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px black solid;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    background-size: 100% 100%;
+}
+.result>button{
+    margin-bottom: 4px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    cursor: pointer;
+
+}
+@media only screen and (max-width: 768px) {
+        .main {
+            width: 90%;
+            height: 95vh;
+            justify-content: space-between;
+            border: none;
+        }
+        .choose {
+            width: 99%;
+            height: 60px;
+        }
+        .fight {
+            width: 100%;
+            height: 600px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .user,
+        .comp {
+            width: 420px;
+            height: 240px;
+            border: double gray 16px;
+        }
+        .result {
+            width: 450px;
+            height: 200px;
+            justify-content: space-evenly;
+            border: none;
+        }
+    
+        .result>button {
+            font-size: 24px;
+            width:160px ;
+            background-color: yellow;
+            border-radius: 20px;
+            border: none;
+        }
+    
+}
